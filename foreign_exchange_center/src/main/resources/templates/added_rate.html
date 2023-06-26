@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Add New Rate</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Add New Rate</h1>
+		<br>
+
+		<form action="#" th:action="@{/save}" th:object="${foreignExchangeRate}"
+			method="post">
+
+			<table border="0" cellpadding="10">
+				<tr>
+					<td>Date:</td>
+					<td><input type="text" th:field="*{date}" /></td>
+				</tr>
+				<tr>
+					<td>UDS To NTD:</td>
+					<td><input type="text" th:field="*{usdToNtd}" /></td>
+				</tr>
+				<tr>
+					<td>RMB To NTD:</td>
+					<td><input type="text" th:field="*{rmbToNtd}" /></td>
+				</tr>
+				<tr>
+					<td>USD To RMB:</td>
+					<td><input type="text" th:field="*{usdToRmb}" /></td>
+				</tr>
+				<tr><td colspan ="2"><button type="submit">SAVE</button></td></tr>
+			</table>
+		</form>
+
+	</div>
+</body>
+</html>

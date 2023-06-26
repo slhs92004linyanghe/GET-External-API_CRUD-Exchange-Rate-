@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>匯率</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+ 		<body th:each="status : ${findAll}">
+	            <td th:text="${status.id}">id</td>
+	            <td th:text="${status.date}">date</td>
+	            <td th:text="${status.rmbToNtd}">rmbToNtd</td>
+	            <td th:text="${status.usdToNtd}">usdToNtd</td>
+	            <td th:text="${status.usdToRmb}">usdToRmb</td>
+            
+               <script src="../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+				<script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+        </body>
+</html>

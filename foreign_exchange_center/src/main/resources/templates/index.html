@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Foreign Exchange Rate</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Rate Records</h1>
+		<p>
+			<a href="add">Add New Records</a>
+		</p>
+		<p>
+			<a href="taifex">Save TAIFEX Exchange Rate OBO</a>
+		</p>
+		<p>
+			<a href="save_all_taifex">Show And Save All TAIFEX Exchange Rate</a>
+		</p>
+
+		<table border="1" cellpadding="10">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Date</th>
+					<th>UDS To NTD</th>
+					<th>RMB To NTD</th>
+					<th>USD To RMB</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- 遍瀝listeEployees -->
+
+				<tr th:each="rate : ${listRates}">
+					<!-- .參數參照model的Employee下面的建構子 -->
+					<td th:text=${rate.id}>Rate ID</td>
+					<td th:text=${rate.date}>Date</td>
+					<td th:text=${rate.usdToNtd}>UDS To NTD</td>
+					<td th:text=${rate.rmbToNtd}>RMB To NTD</td>
+					<td th:text=${rate.usdToRmb}>USD To RMB</td>
+					<td><a th:href="@{'/edit/'+${rate.id}}">Edit</a> &nbsp; <a
+						th:href="@{'/delete/'+${rate.id}}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+</body>
+</html>
