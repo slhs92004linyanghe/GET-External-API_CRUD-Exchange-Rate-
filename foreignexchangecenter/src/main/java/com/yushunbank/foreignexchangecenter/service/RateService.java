@@ -2,7 +2,6 @@ package com.yushunbank.foreignexchangecenter.service;
 
 import java.util.List;
 
-import com.yushunbank.foreignexchangecenter.model.Employee;
 import com.yushunbank.foreignexchangecenter.model.ForeignExchangeRate;
 
 public interface RateService {

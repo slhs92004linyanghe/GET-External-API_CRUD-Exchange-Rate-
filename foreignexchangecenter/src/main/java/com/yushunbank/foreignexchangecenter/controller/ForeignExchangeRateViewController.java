@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.yushunbank.foreignexchangecenter.model.Employee;
 import com.yushunbank.foreignexchangecenter.model.ForeignExchangeRate;
 import com.yushunbank.foreignexchangecenter.service.RateService;
 

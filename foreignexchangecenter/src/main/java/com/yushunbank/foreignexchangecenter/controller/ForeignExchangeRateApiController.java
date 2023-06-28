@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yushunbank.foreignexchangecenter.model.Employee;
 import com.yushunbank.foreignexchangecenter.model.ForeignExchangeRate;
 import com.yushunbank.foreignexchangecenter.service.RateService;
 
