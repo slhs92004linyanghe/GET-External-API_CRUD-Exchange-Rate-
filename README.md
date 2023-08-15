@@ -6,6 +6,7 @@ MYSQL需先CREATE SCHEMA:yushanbank_foreign_exchange_center
 首頁:http://localhost:8888/
 
 此專案使用MYSQL,SPRING BOOT,thymleaf
+前端框架:react
 有以下功能:
 
 1.使用RESTFUL API 進行CRUD (詳ForeignExchangeRateApiController)可透過POSTMAN打測對DB進行存取
